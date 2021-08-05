@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Japan Trip 2015 - Travel Blog Website </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./slideshow.css">
+
+</head>
+<body>
+  <header>
+  <nav>
+  <ul>
+  <li><a href="mainpage.html" class="current">HOME</a></li>
+  <li><a href="secondpage.html">DESTINATIONS</a></li>
+  <li><a href="photography.html">PHOTOGRAPHY</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+  </nav>
+  </header>
+<!-- partial:index.partial.html -->
+<section class="hero">
+  <div class="hero-inner" id="section-0">
+    <figure></figure>
+    <h2 class="hero__title">Japan Trip 2015</h2>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-inner" id="section-1">
+    <figure></figure>
+    <h2 class="hero__title"></h2>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-inner" id="section-2">
+    <figure></figure>
+    <h2 class="hero__title"></h2>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-inner" id="section-3">
+    <figure></figure>
+    <h2 class="hero__title">So beautiful...</h2>
+  </div>
+</section>
+<section class="content">
+  <article class="content__inner">
+    <h1 class="content__title">The Journey</h1>
+    <h3 class="content__author" id="june2015">June 2015</h3>
+    <h1>TOKYO</h1>
+    <p>Slideshow of pictures taken at Asakusa Temple</p>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="june2015/IMG_4090.JPG" style="width:100%">
+    <div class="text">Entrance of Asakusa Temple</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="june2015/IMG_4078.JPG" style="width:100%">
+    <div class="text">Picture of Asakusa Temple</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="june2015/IMG_4097.JPG" style="width:100%">
+    <div class="text">Little boy trying to draw lots at Asakusa Temple</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <p>Asakusa Shrine (浅草神社, Asakusa-jinja) is a Shinto shrine located in the Asakusa district of Tokyo, Japan. Also known as Sanja-sama (Shrine of the Three gods), it is one of the most famous Shinto shrines in the city. The temple is built since  c. 645 AD. </p>
+    <img src="june2015/IMG_2005.JPG" style="width:100%">
+    <p>A photo of Asakusa Shrine entrance. </p>
+    <img src="june2015/IMG_2018.JPG" style="width:100%" alt="">
+    <h1>KYOTO</h1>
+    <img src="june2015/IMG_4577.JPG" style="width:100%">
+    <blockquote>When you do it your way you can go anywhere you choose.</blockquote>
+    <p>On the way to Kameoka Station ~~ </p>
+    <video width="100%" controls>
+      <source src="june2015/IMG_3704_Trim.mp4" type="video/mp4">
+    </video>
+    <p>Scenery while riding the train! </p>
+    <img src="june2015/IMG_3739.JPG" style="width:100%" alt="">
+    <h1>KANAZAWA</h1>
+    <p>Omicho Market</p>
+    <img src="june2015/IMG_1383.JPG" style="width:100%" alt="">
+    <p>Seafooood tasting (modal images)</p>
+    <div class="row">
+      <div class="column">
+        <img src="june2015/IMG_3357.JPG" alt="scallop" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="june2015/IMG_5746.JPG" alt="uni" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="june2015/IMG_3358.JPG" alt="scallop" style="width:100%">
+      </div>
+    </div>
+    </div>
+    <h1>TAKAYAMA</h1>
+    <p>Hida Folk Village</p>
+    <img src="june2015/IMG_1794.JPG" style="width:100%" alt="">
+
+    <blockquote>Don't fight it, use what happens.</blockquote>
+    <img src="june2015/IMG_3508.JPG" style="width:100%" alt="">
+    <h1>HOKKAIDO</h1>
+    <p>Hakodate</p>
+    <img src="june2015/IMG_1916.JPG" style="width:100%" alt="">
+    <img src="june2015/IMG_4159.JPG" style="width:100%" alt="">
+    <img src="june2015/IMG_1902.JPG" style="width:100%" alt="">
+    <p>Onuma Park</p>
+    <a href="juneitinerary.html" class="current">Guide link for trip</a>
+    <h3 class="content__author" name="nov2015">November 2015</h3>
+    <img src="june2015/IMG_7333.JPG" style="width:100%" alt="">
+    <p>Park</p>
+
+</section>
+<!-- partial -->
+
+</body>
+
+</html>

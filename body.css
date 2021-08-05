@@ -1,0 +1,77 @@
+h1 {text-align: center;}
+p {text-align: center;}
+.row {
+  display: flex;flex: 33.33%;
+  padding: 5px;
+}
+.row2 {
+  display: flex;flex: 33.33%;
+  padding: 5px;
+}
+
+.column1 {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.column2 {
+  flex: 33.33%;
+  padding: 5px;
+}
+.column3 {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.column1 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.first {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column1:hover .image {
+  opacity: 0.3;
+}
+
+.column1:hover .first {
+  opacity: 1;
+}
+
+.column2:hover .picture {
+  opacity: 0.3;
+}
+
+.column2:hover .second {
+  opacity: 1;
+}
+
+.hoverfirst {
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.hoversecond {
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
